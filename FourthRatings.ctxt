@@ -1,0 +1,55 @@
+#BlueJ class context
+comment0.target=FourthRatings
+comment1.params=movieID\ minimalRaters
+comment1.target=double\ getAverageByID(java.lang.String,\ int)
+comment1.text=\r\n\ Return\ a\ doule\ representing\ the\ average\ rating\ for\ a\ specified\ movie\ with\ @param\ movieID\r\n\ if\ there\ are\ at\ least\ @param\ minimalRaters\ ratings\ by\ all\ raters\ in\ RaterDatabase.\ Otherwise,\ return\ 0.0\r\n\ This\ method\ will\ be\ called\ from\ getAverageRatings()\ method\r\n
+comment10.params=
+comment10.target=void\ testGetSimilarities()
+comment10.text=\r\n\ Test\ getSimilarities()\ method\ with\ the\ test\ case\ outlined\ in\ code\ below\r\n
+comment11.params=raterRatings\ numSimilarRaters
+comment11.target=java.util.ArrayList\ chooseSimilarRaters(java.util.ArrayList,\ int)
+comment11.text=\r\n\ Return\ the\ first\ @param\ numSimilarRaters\ from\ a\ list\ of\ raters\ @param\ raterRatings\r\n
+comment12.params=similarRaters\ filteredMovieIDs
+comment12.target=java.util.HashMap\ calculateWeightedRating(java.util.ArrayList,\ java.util.ArrayList)
+comment12.text=\r\n\ Calculate\ weighted\ ratings\ for\ all\ movies\ which\ are\ rated\ by\ raters\ in\ @param\ similarRaters\ and\ included\ in\ @param\ filterMovieIDs\r\n
+comment13.params=movieWeightedRatingMap\ minimalRaters
+comment13.target=java.util.ArrayList\ calculateWeightedAverageRating(java.util.HashMap,\ int)
+comment14.params=targetRaterID\ numSimilarRaters\ minimalRaters
+comment14.target=java.util.ArrayList\ getSimilarRatings(java.lang.String,\ int,\ int)
+comment14.text=\r\n\ Return\ an\ ArrayList\ of\ type\ Rating,\ of\ movies\ and\ their\ weighted\ average\ ratings\ using\ only\ \r\n\ the\ top\ numSimilarRaters\ with\ positive\ ratings\ and\ including\ only\ those\ movies\ that\ have\ \r\n\ at\ least\ minimalRaters\ ratings\ from\ those\ most\ similar\ raters\ \r\n\ (not\ just\ minimalRaters\ ratings\ overall).\ \r\n\ For\ example,\ if\ minimalRaters\ is\ 3\ and\ a\ movie\ has\ 4\ ratings\ but\ only\ 2\ of\ those\ ratings\ were\ made\ by\ raters\ in\ the\ top\ numSimilarRaters,\ \r\n\ that\ movie\ should\ not\ be\ included.\r\n\ This\ method\ calls\ getSimilarRatingsByFilter()\ method\ and\ uses\ a\ TrueFilter\ as\ the\ filterCriteria\ to\ qualify\ all\ movies\ in\ the\ MovieDatabase\ for\ recommendations\r\n
+comment15.params=
+comment15.target=void\ testGetSimilarRatings()
+comment15.text=\r\n\ Test\ chooseSimilarRaters(),\ calculatedWeightedRating(),\ calculateweightedAverageRating(),\ getSimilarRatings()\ method\r\n\ Test\ case\ 2\:\ \r\n\ file\ "ratings.csv",\ "ratedmoviesfull.csv",\ targetRaterID\ \=\ "65";\ numSimilarRaters\ \=\ 20;\ minimalRaters\ \=\ 5\r\n\ output\:\ \u201CThe\ Fault\ in\ Our\ Stars\u201D\ as\ the\ 1st\ recommendation\r\n
+comment16.params=targetRaterID\ numSimilarRaters\ minimalRaters\ filterCriteria
+comment16.target=java.util.ArrayList\ getSimilarRatingsByFilter(java.lang.String,\ int,\ int,\ Filter)
+comment16.text=\r\n\ Uses\ that\ filter\ to\ access\ and\ rate\ only\ those\ movies\ that\ match\ the\ filter\ criteria\r\n\ TODO\:\ 1)\ finish\ this\ method\ 2)\ refactor\ getSimilarRatings()\ by\ calling\ this\ method\r\n
+comment17.params=
+comment17.target=void\ testGetSimilarRatingsByFilter()
+comment17.text=\r\n\ Test\ getSimilarRatingsByFilter()\ method\ \r\n\ Test\ case\:\r\n\ input\:\ files\ "ratedmoviesfull.csv"\ and\ "ratings.csv",\ targetGenre\ \=\ "Action",\ \ targetRaterID\ \=\ "65",\ minimalRaters\ \=\ 5,\ numSimilarRaters\ \=\ 20\r\n\ output\:\ the\ movie\ returned\ with\ the\ top\ rated\ average\ is\ \u201CRush\u201D.\r\n
+comment18.params=args
+comment18.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ testGetAverageByID()
+comment2.text=\r\n\ Test\ getAverageByID()\ method\r\n\ E.g.\ \r\n\ input\:\ file\ "ratings_short.csv",\ movieID\ \=\ "0068646",\ minimalRaters\ \=\ 1;\ \r\n\ output\ \=\ 9.0\r\n
+comment3.params=minimalRaters
+comment3.target=java.util.ArrayList\ getAverageRatings(int)
+comment3.text=\r\n\ Return\ an\ ArrayList\ of\ type\ Rating\ of\ all\ movies\ which\ have\ at\ least\ @param\ minimalRaters\r\n\ Each\ Rating\ object\ stores\ a\ movieID\ and\ the\ average\ rating\ by\ all\ raters\ in\ RaterDatabase\ for\ that\ movie\r\n
+comment4.params=
+comment4.target=void\ testGetAverageRatings()
+comment4.text=\r\n\ Test\ getAverageRatings()\r\n\ Test\ case\:\r\n\ input\:\ file\ "ratings_short.csv"\ and\ "ratedmovies_short.csv",\ minimalRaters\ \=\ 3;\r\n\ output\:\ 2\ movies\ --\ Her\ with\ average\ rating\ of\ 8.25\ and\ The\ Godfater\ with\ 9.0\r\n
+comment5.params=minimalRaters\ filterCriteria
+comment5.target=java.util.ArrayList\ getAverageRatingsByFilter(int,\ Filter)
+comment5.text=\r\n\ Return\ an\ ArrayList\ of\ type\ Rating\ of\ all\ movies\ which\ have\ at\ least\ @param\ minimalRaters\ ratings\ and\ satisfies\ @param\ filterCriteria\ \r\n\ Each\ Rating\ object\ stores\ a\ movieID\ and\ the\ average\ rating\ by\ all\ raters\ in\ the\ RaterDatabase\ for\ that\ movie\r\n
+comment6.params=
+comment6.target=void\ testGetAverageRatingsByFilter()
+comment6.text=\r\n\ Test\ getAverageRatingsByFilter()\ method\r\n\ Test\ case\:\r\n\ input\:\ file\ "ratings_short.csv"\ and\ "ratedmovies_short.csv",\ minimalRaters\ \=\ 3;\ GenreFilter\ for\ "Romance"\r\n\ output\:\ 1\ movie\ --\ Her\ with\ average\ rating\ of\ 8.25\r\n
+comment7.params=me\ r
+comment7.target=int\ dotProduct(Rater,\ Rater)
+comment7.text=\r\n\ Transforms\ the\ ratings\ stored\ by\ @param\ Rater\ me\ and\ r\ and\ calculates\ the\ dot\ product\ of\ the\ two\ raters\ as\ a\ measure\ of\ their\ similarity\r\n\ This\ method\ will\ be\ called\ from\ getSimilarities()\r\n
+comment8.params=
+comment8.target=void\ testDotProduct()
+comment8.text=\r\n\ Test\ dotProduct()\ method\ with\ sample\ input\ and\ correct\ output\ shown\ below\ -\ CORRECT\ OUTPUT\ FOR\ QUIZ\r\n
+comment9.params=targetRaterID
+comment9.target=java.util.ArrayList\ getSimilarities(java.lang.String)
+comment9.text=\r\n\ Compute\ a\ similarity\ rating\ for\ each\ rater\ in\ the\ RaterDatabase\ (except\ the\ rater\ with\ the\ ID\r\n\ given\ by\ the\ parameter)\ to\ see\ how\ similar\ they\ are\ to\ the\ Rater\ whose\ ID\ is\ the\ parameter\r\n\ Returns\ an\ ArrayList\ of\ type\ Rating\ sorted\ by\ ratings\ from\ highest\ to\ lowest\ rating\ \r\n\ with\ the\ highest\ rating\ rating\ first\ and\ only\ including\ those\ raters\ who\ have\ a\ positive\ similarity\ rating\r\n\ since\ those\ with\ negative\ values\ are\ not\ similar\ in\ any\ way\r\n\ Note\ hat\ in\ each\ Rating\ object,\ the\ item\ field\ is\ raterID\ and\ the\ value\ field\ is\ the\ dot\ product\r\n\ comparision\ between\ that\ rater\ and\ the\ rater\ whose\ ID\ is\ the\ parameter\r\n\ Be\ sure\ not\ to\ sue\ the\ dotProduct()\ with\ the\ parameter\ id\ and\ itself\r\n
+numComments=19

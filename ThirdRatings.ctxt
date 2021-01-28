@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ThirdRatings
+comment1.params=
+comment1.target=ThirdRatings()
+comment2.params=ratingsFile
+comment2.target=ThirdRatings(java.lang.String)
+comment3.params=
+comment3.target=int\ getRaterSize()
+comment3.text=\r\n\ Return\ the\ number\ of\ raters\ that\ were\ read\ in\ and\ stored\ in\ myRaters\r\n
+comment4.params=id\ minimalRaters
+comment4.target=double\ getAverageByID(java.lang.String,\ int)
+comment4.text=\r\n\ Return\ a\ doule\ representing\ the\ average\ rating\ for\ a\ specified\ movie\ \r\n\ (by\ @param\ id\ i.e.\ movie's\ IMDB\ id)\ if\ there\ are\ at\ least\ @param\ minimalRaters\ ratings.\r\n\ If\ there\ are\ not\ @param\ minimalRaters\ ratings,\ return\ 0.0\r\n
+comment5.params=minimalRaters
+comment5.target=java.util.ArrayList\ getAverageRatings(int)
+comment5.text=\r\n\ Return\ an\ ArrayList\ of\ Rating\ that\ contains\ the\ average\ rating\ for\ every\ movie\ \r\n\ with\ @param\ minialRaters\ ratings\r\n
+comment6.params=minimalRaters\ filterCriteria
+comment6.target=java.util.ArrayList\ getAverageRatingsByFilter(int,\ Filter)
+comment6.text=\r\n\ Return\ an\ ArrayList\ of\ type\ Rating\ of\ all\ the\ movies\ which\ have\ at\ least\ @param\ minimalRaters\ ratings\r\n\ and\ satisfies\ @param\ filterCriteria\r\n
+numComments=7

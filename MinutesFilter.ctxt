@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MinutesFilter
+comment0.text=\r\n\ Filter\ movies\ by\ their\ length\r\n
+comment1.params=min\ max
+comment1.target=MinutesFilter(int,\ int)
+comment2.params=id
+comment2.target=boolean\ satisfies(java.lang.String)
+comment2.text=\r\n\ Return\ true\ if\ the\ length\ of\ the\ movie\ specified\ by\ @param\ id\ is\ between\ minLength\ and\ maxLength\r\n
+numComments=3

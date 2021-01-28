@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=FirstRatings
+comment0.text=\r\n\ Process\ the\ movie\ and\ ratings\ data\ and\ answer\ questions\ about\ them\r\n
+comment1.params=fileName
+comment1.target=java.util.ArrayList\ loadMovies(java.lang.String)
+comment1.text=\r\n\ Process\ every\ movie\ from\ the\ CSV\ file\ whose\ name\ is\ @param\ fileName,\ \r\n\ and\ return\ an\ ArrayList\ of\ type\ Movie\ with\ all\ of\ the\ movie\ data\ from\ the\ file\r\n\ The\ header\ of\ the\ CSV\ file\ includes\:\r\n\ id\ (i.e.\ IMDB\ id),\ title,\ year,\ country,\ genre,\ director,\ minutes,\ poster\ (i.e.\ poster\ URL)\r\n\ @throws\ IOException\ when\ the\ CSVParser\ object\ cannot\ be\ instantiated\ from\ a\ file\ with\ @param\ fileName\r\n
+comment2.params=
+comment2.target=void\ testLoadMovies()
+comment2.text=\r\n\ Test\ loadMovies()\ method\r\n\ E.g.\ \r\n\ for\ fileName\ "ratedmovies_short.csv"\:\r\n\ \#\ movies\ \=\ 5\r\n\ \#\ comedy\ \=\ 1\r\n\ \#\ movies\ at\ 150+\ min\ \=\ 2\r\n\ for\ fileName\ "ratedmoviesfull.csv"\:\r\n\ \#\ movies\ \=\ 3143\r\n\ \#\ comedy\ \=\ 960\r\n\ \#\ movies\ at\ 150+\ min\ \=\ 132\r\n\ max\ \#\ movies\ by\ any\ director\ \=\ 23\r\n\ directors\ with\ max\ \#\ of\ movies\ \=\ [Woody\ Allen]\r\n
+comment3.params=fileName
+comment3.target=java.util.ArrayList\ loadRaters(java.lang.String)
+comment3.text=\r\n\ Read\ a\ CSV\ file\ containing\ the\ ratings\ of\ movies\ by\ different\ raters\r\n\ and\ return\ an\ ArrayList\ of\ Raters\ -\ each\ Rater\ has\ a\ unique\ rater\ id\ and\ an\ ArrayList\ of\ ratings\ by\ that\ rater\r\n\ The\ head\ of\ a\ rating\ CSV\ file\ includes\:\r\n\ rater_id,\ movie_id,\ rating,\ time\r\n\ @throws\ IOException\ when\ the\ CSVParser\ object\ cannot\ be\ instantiated\ from\ a\ file\ with\ @param\ fileName\r\n
+comment4.params=
+comment4.target=void\ testLoadRaters()
+comment4.text=\r\n\ Test\ loadRaters()\ method\r\n\ e.g\ \r\n\ for\ file\ "ratings_shorts.csv"\r\n\ \#\ of\ raters\ \=\ 5\r\n\ \#\ of\ ratings\ for\ rater_id\ 2\ \=\ 3\r\n\ max\ \#\ ratings\ by\ any\ rater\ \=\ \=\ 3,\ \r\n\ raterIds\ of\ raters\ with\ max\ \#\ ratings\ \=\ 2\r\n\ \#\ ratings\ for\ movieId\ 1798709\ \=\ 4\r\n\ \#\ different\ movies\ rated\ by\ all\ raters\ \=\ 4;\r\n\ for\ file\ "ratings.csv"\r\n\ \#\ of\ raters\ \=\ 1048\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

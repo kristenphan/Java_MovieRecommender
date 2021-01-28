@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=DirectorsFilter
+comment0.text=\r\n\ Filter\ movies\ by\ directors\r\n
+comment1.params=directors
+comment1.target=DirectorsFilter(java.lang.String)
+comment1.text=\r\n\ Initialize\ the\ filter\r\n\ @param\ directors\ is\ a\ list\ of\ target\ directors\ separated\ by\ comma\ e.g.\ "Charles\ Chaplin,Michael\ Mann,Clint\ Eastwood"\r\n
+comment2.params=id
+comment2.target=boolean\ satisfies(java.lang.String)
+comment2.text=\r\n\ Return\ true\ if\ the\ movie\ was\ directed\ by\ at\ least\ one\ of\ the\ targetDirectors\r\n
+numComments=3

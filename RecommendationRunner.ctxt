@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=RecommendationRunner
+comment0.text=\r\n\ Implement\ the\ interface\ Recommender\ \r\n
+comment1.params=numSampleMovies
+comment1.target=java.util.ArrayList\ getRandomMovieIDs(int)
+comment1.text=\r\n\ Return\ an\ ArrayList\ of\ type\ String\ of\ movie\ IDs\ of\ the\ movies\ randomly\ chosen\ from\ the\ MovieDatabase.\ \r\n\ These\ movies\ will\ be\ presented\ to\ a\ user\ for\ rating,\ and\ the\ results\ will\ be\ used\ to\ profile\ said\ user.\r\n\ Note\ that\ all\ movie\ IDs\ chosen\ should\ be\ unique\ so\ that\ a\ user\ will\ be\ asked\ to\ rate\ all\ unique\ movies\r\n\ This\ method\ will\ be\ called\ by\ RecommenderRunner.getItemsToRate()\ method\r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getItemsToRate()
+comment2.text=\r\n\ This\ method\ returns\ a\ list\ of\ movie\ IDs\ that\ will\ be\ used\ to\ look\ up\ \r\n\ the\ movies\ in\ the\ MovieDatabase\ and\ present\ them\ to\ users\ to\ rate.\ \r\n\ The\ movies\ to\ be\ rated\ will\ be\ chosen\ randomly\ from\ the\ MovieDatabase.\r\n\r\n\ The\ ratings\ for\ these\ movies\ will\ make\ the\ profile\ for\ a\ new\ Rater\ \r\n\ that\ will\ be\ used\ to\ compare\ to\ for\ finding\ recommendations.\r\n
+comment3.params=webRaterID
+comment3.target=void\ printRecommendationsFor(java.lang.String)
+comment3.text=\r\n\ This\ method\ returns\ nothing,\ but\ prints\ out\ an\ HTML\ table\ of\ the\ \r\n\ movies\ recommended\ for\ the\ given\ rater.\r\n\ \r\n\ The\ HTML\ printed\ will\ be\ displayed\ on\ a\ web\ page,\ so\ the\ number\ you\r\n\ choose\ to\ display\ may\ affect\ how\ long\ the\ page\ takes\ to\ load.\ \ For\ \r\n\ example,\ you\ may\ want\ to\ limit\ the\ number\ printed\ to\ only\ the\ top\ \r\n\ 20-50\ movies\ recommended\ or\ to\ movies\ not\ rater\ by\ the\ given\ rater.\r\n\ \r\n\ You\ may\ also\ include\ CSS\ styling\ for\ your\ table\ using\ the\ &lt;style&gt;\r\n\ tag\ before\ you\ print\ the\ table.\ \ There\ are\ no\ restrictions\ on\ which\ \r\n\ movies\ you\ print,\ what\ order\ you\ print\ them\ in,\ or\ what\ information\r\n\ you\ include\ about\ each\ movie.\ \r\n\ \r\n\ @param\ webRaterID\ the\ ID\ of\ a\ new\ Rater\ that\ has\ been\ already\ added\ to\ \r\n\ \ \ \ \ \ \ \ the\ RaterDatabase\ with\ ratings\ for\ the\ movies\ returned\ by\ the\ \r\n\ \ \ \ \ \ \ \ method\ getItemsToRate\r\n
+numComments=4

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=SecondRatings
+comment1.params=
+comment1.target=SecondRatings()
+comment2.params=movieFile\ ratingsFile
+comment2.target=SecondRatings(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=int\ getMovieSize()
+comment3.text=\r\n\ Return\ the\ number\ of\ movies\ that\ were\ read\ in\ and\ stored\ in\ myMovies\r\n
+comment4.params=
+comment4.target=int\ getRaterSize()
+comment4.text=\r\n\ Return\ the\ number\ of\ raters\ that\ were\ read\ in\ and\ stored\ in\ myRaters\r\n
+comment5.params=id\ minimalRaters
+comment5.target=double\ getAverageByID(java.lang.String,\ int)
+comment5.text=\r\n\ Return\ a\ doule\ representing\ the\ average\ rating\ for\ a\ specified\ movie\ \r\n\ (by\ @param\ id\ i.e.\ movie's\ IMDB\ id)\ if\ there\ are\ at\ least\ @param\ minimalRaters\ ratings.\r\n\ If\ there\ are\ not\ @param\ minimalRaters\ ratings,\ return\ 0.0\r\n
+comment6.params=minimalRaters
+comment6.target=java.util.ArrayList\ getAverageRatings(int)
+comment6.text=\r\n\ Return\ an\ ArrayList\ of\ Rating\ that\ contains\ the\ average\ rating\ for\ every\ movie\ \r\n\ with\ @param\ minialRaters\ ratings\r\n
+comment7.params=id
+comment7.target=java.lang.String\ getTitle(java.lang.String)
+comment7.text=\r\n\ Return\ the\ title\ of\ the\ movie\ with\ the\ @param\ id.\ If\ no\ such\ movie\ exists,\ return\ "NO\ SUCH\ ID"\r\n
+comment8.params=title
+comment8.target=java.lang.String\ getID(java.lang.String)
+comment8.text=\r\n\ Return\ the\ IMDB\ id\ of\ the\ movie\ with\ the\ @param\ title.\ If\ no\ such\ movie\ exists,\ return\ "NO\ SUCH\ TITLE"\r\n
+numComments=9

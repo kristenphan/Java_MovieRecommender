@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=MovieRunnerSimilarRatings
+comment0.text=\r\n\ Write\ a\ description\ of\ MovieRunnerSimilarRatings\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ printAverageRatings()
+comment1.text=\r\n\ Print\ the\ average\ ratings\ for\ all\ movies\ which\ have\ at\ least\ @param\ minimalRaters\ by\ any\ of\ the\ raters\ in\ RaterDatabase\r\n
+comment2.params=
+comment2.target=void\ printAverageRatingsByYearAfterAndGenre()
+comment2.text=\r\n\ Print\ a\ list\ of\ movies\ and\ their\ average\ ratings\ for\ all\ movies\ in\ MovieDatabase\ which\ have\ at\ least\ @param\ minimalRaters\r\n\ by\ any\ of\ the\ raters\ in\ RaterDatabase\ and\ satisfy\ all\ filter\ criterias\ @param\ af\r\n
+comment3.params=
+comment3.target=void\ printSimilarRatings()
+comment3.text=\r\n\ Print\ a\ list\ of\ recommended\ movies\ tailored\ for\ a\ particular\ rater\ with\ @param\ targetRaterID,\ has\ at\ least\ @param\ minimalRaters,\ \r\n\ and\ chosen\ based\ on\ @param\ numSimilarRaters\ who\ share\ similar\ interests\ with\ the\ target\ rater\ from\ all\ movies\ in\ MovieDatabase\r\n\ Test\ case\:\r\n\ input\:\ files\ "ratedmoviesfull.csv"\ and\ "ratings.csv",\ targetGenre\ \=\ "Action",\ \ targetRaterID\ \=\ "65",\ minimalRaters\ \=\ 5,\ numSimilarRaters\ \=\ 20\r\n\ output\:\ the\ movie\ returned\ with\ the\ top\ rated\ average\ is\ \u201CRush\u201D.\r\n
+comment4.params=
+comment4.target=void\ printSimilarRatingsByGenre()
+comment4.text=\r\n\ Print\ a\ list\ of\ recommended\ movies\ which\ falls\ into\ @param\ targetGenere,\ \r\n\ tailored\ for\ a\ particular\ rater\ with\ @param\ targetRaterID,\ has\ at\ least\ @param\ minimalRaters,\ \r\n\ and\ chosen\ based\ on\ @param\ numSimilarRaters\ who\ share\ similar\ interests\ with\ the\ target\ rater\r\n\ Test\ case\:\r\n\ input\:\ \r\n\ file\ ratedmoviesful.csv\ and\ ratings.csv,\ \r\n\ targetGenre\ "Action";\r\n\ raterID\ \=\ "65",\ \r\n\ minimalRaters\ "5",\ \r\n\ numSimilarRaters\ \=\ "20";\r\n\ output\:\r\n\ the\ movie\ return\ with\ the\ top\ rated\ average\ is\ "Rush"\r\n
+comment5.params=
+comment5.target=void\ printSimilarRatingsByDirector()
+comment5.text=\r\n\ Print\ a\ list\ of\ recommended\ movies\ which\ were\ directed\ by\ at\ least\ of\ the\ @param\ targetDirectors,\ \r\n\ tailored\ for\ a\ particular\ rater\ with\ @param\ targetRaterID,\ has\ at\ least\ @param\ minimalRaters,\ \r\n\ and\ chosen\ based\ on\ @param\ numSimilarRaters\ who\ share\ similar\ interests\ with\ the\ target\ rater\r\n\ Test\ case\:\r\n\ input\:\ \r\n\ using\ file\ ratedmoviesfull.csv\ and\ ratings.csv,\ \r\n\ targetDirectors\ \=\ "Clint\ Eastwood,Sydney\ Pollack,David\ Cronenberg,Oliver\ Stone",\ \r\n\ targetRaterID\ \=\ "1034",\ \r\n\ minimalRaters\ \=\ 3,\r\n\ numSimilarRaters\ \=\ 10;\r\n\ output\:\ \ \r\n\ the\ movie\ returned\ with\ the\ top\ rated\ average\ is\ \u201CUnforgiven\u201D\r\n
+comment6.params=
+comment6.target=void\ printSimilarRatingsByGenreAndMinutes()
+comment6.text=\r\n\ Print\ a\ list\ of\ recommended\ movies\ which\ fall\ into\ @param\ targetGenre\ and\ whose\ lengths\ are\ between\ @param\ minLen\ and\ @param\ maxLen\ (inclusive),\ \r\n\ tailored\ for\ a\ particular\ rater\ with\ @param\ targetRaterID,\ has\ at\ least\ @param\ minimalRaters,\ \r\n\ and\ chosen\ based\ on\ @param\ numSimilarRaters\ who\ share\ similar\ interests\ with\ the\ target\ rater\r\n\ Test\ case\:\r\n\ input\:\ \r\n\ using\ file\ ratedmoviesfull.csv\ and\ ratings.csv,\ \r\n\ targetGenre\ \=\ "Adventure";\r\n\ minLen\ \=\ 100\ (inclusive);\r\n\ maxLen\ \=\ 200\ (inclusive);\r\n\ targetRaterID\ \=\ "65",\ \r\n\ minimalRaters\ \=\ 5,\r\n\ numSimilarRaters\ \=\ 10;\r\n\ output\:\ \ \r\n\ the\ movie\ returned\ with\ the\ top\ rated\ average\ is\ \u201CInterstellar\u201D.\r\n
+comment7.params=
+comment7.target=void\ printSimilarRatingsByYearAfterAndMinutes()
+comment7.text=\r\n\ Print\ a\ list\ of\ recommended\ movies\ which\ were\ produced\ on\ or\ after\ @param\ targetYear\ and\ whose\ lengths\ are\ between\ @param\ minLen\ and\ @param\ maxLen\ (exclusive),\ \r\n\ tailored\ for\ a\ particular\ rater\ with\ @param\ targetRaterID,\ has\ at\ least\ @param\ minimalRaters,\ \r\n\ and\ chosen\ based\ on\ @param\ numSimilarRaters\ who\ share\ similar\ interests\ with\ the\ target\ rater\r\n\ Test\ case\:\r\n\ input\:\ \r\n\ using\ file\ ratedmoviesfull.csv\ and\ ratings.csv,\ \r\n\ targetYear\ \=\ 2000;\r\n\ minLen\ \=\ 100\ (inclusive);\r\n\ maxLen\ \=\ 200\ (inclusive);\r\n\ targetRaterID\ \=\ "65",\ \r\n\ minimalRaters\ \=\ 5,\r\n\ numSimilarRaters\ \=\ 10;\r\n\ output\:\ \ \r\n\ the\ movie\ returned\ with\ the\ top\ rated\ average\ is\ \u201CThe\ Grand\ Budapest\ Hotel\u201D.\r\n
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

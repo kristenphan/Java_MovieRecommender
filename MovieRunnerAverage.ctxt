@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MovieRunnerAverage
+comment0.text=\r\n\ Test\ SecondRatings\ class\r\n\ E.g.\ for\ movieFile\ ""data/ratedmovies_short.csv"\ and\ ratingFile\ "data/ratings_short.csv",\r\n\ output\ is\ as\ follows\:\r\n\ \#\ movies\ \=\ 5\r\n\ \#\ raters\ \=\ 5\r\n\ 8.25\ Her\r\n\ 9.0\ The\ Godfather\r\n
+comment1.params=
+comment1.target=void\ printAverageRatings()
+comment2.params=
+comment2.target=void\ getAverageRatingOneMovie()
+comment2.text=\r\n\ Read\ movie\ and\ rating\ file,\ and\ print\ the\ average\ rating\ for\ a\ specific\ movie\ title\r\n\ E.g.\ for\ movie\ file\ "ratedmovies_short.csv",\ the\ avg\ rating\ for\ the\ movie\ "The\ Godfather"\ \=\ 9.0\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
